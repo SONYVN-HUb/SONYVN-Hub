@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONYVN Hub • Chính Hãng Giá Tốt | Affiliate Shopee</title>
+    <meta name="description" content="Mua Sony chính hãng giá tốt nhất Việt Nam. Headphones, Camera, TV, PlayStation... Link Shopee affiliate uy tín. Bảo hành chính hãng, giao nhanh.">
+    <meta name="keywords" content="Sony chính hãng, Sony Việt Nam, tai nghe Sony, camera Sony, TV Sony, PlayStation, affiliate Shopee">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+    
+    <!-- Tailwind CSS via CDN - đẹp & responsive ngay -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@500;600&amp;display=swap');
+        
+        :root {
+            --sony-red: #E60012;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'Poppins', system_ui, sans-serif;
+        }
+
+        .sony-gradient {
+            background: linear-gradient(135deg, #E60012 0%, #FF4D4D 100%);
+        }
+
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #E60012;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #E60012, #FF4D4D);
+            border-radius: 3px;
+        }
+
+        .sony-btn {
+            background: #E60012;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .sony-btn:hover {
+            background: #c1000f;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgb(230 0 18 / 0.3);
+        }
+
+        .product-img {
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .affiliate-badge {
+            background: #FEF3C7;
+            color: #92400E;
+            font-size: 0.75rem;
+            padding: 2px 10px;
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <!-- NAVBAR -->
+    <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 sony-gradient rounded-2xl flex items-center justify-center">
+                        <span class="text-white font-bold text-3xl tracking-tighter">S</span>
+                    </div>
+                    <div>
+                        <div class="font-display font-semibold text-2xl tracking-tighter">SONYVN</div>
+                        <div class="text-[10px] text-zinc-500 -mt-1">HUB • Chính Hãng</div>
+                    </div>
+                </div>
+
+                <!-- Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm">
+                    <a href="#products" class="nav-link text-zinc-300 hover:text-white font-medium">Sản phẩm</a>
+                    <a href="#why" class="nav-link text-zinc-300 hover:text-white font-medium">Tại sao chọn Sony</a>
+                    <a href="#reviews" class="nav-link text-zinc-300 hover:text-white font-medium">Đánh giá</a>
+                    <a href="#contact" class="nav-link text-zinc-300 hover:text-white font-medium">Liên hệ</a>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <a href="https://shopee.vn" target="_blank" 
+                       class="hidden sm:flex items-center gap-x-2 px-4 py-2 text-sm font-medium text-white bg-zinc-800 hover:bg-zinc-700 rounded-2xl transition-colors">
+                        <i class="fa-brands fa-shopify"></i>
+                        <span>Shopee Mall</span>
+                    </a>
+                    
+                    <!-- Mobile menu button -->
+                    <button class="md:hidden w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-x-2 bg-zinc-900 border border-zinc-800 rounded-3xl px-4 py-1.5 mb-6">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="text-emerald-400 text-sm font-medium">Đang có 12.847 đơn hàng thành công</span>
+                </div>
+                
+                <h1 class="font-display text-6xl md:text-7xl font-semibold tracking-tighter leading-[1.05] mb-6">
+                    Sony Chính Hãng.<br>
+                    Giá tốt nhất VN.
+                </h1>
+                
+                <p class="max-w-md text-xl text-zinc-400 mb-8">
+                    Link affiliate Shopee uy tín. Bảo hành chính hãng toàn quốc. 
+                    Giao nhanh 1-3 ngày.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#products" 
+                       class="sony-btn inline-flex items-center justify-center gap-x-3 px-8 h-14 rounded-3xl font-semibold text-lg">
+                        <span>Xem sản phẩm hot</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    
+                    <a href="#why" 
+                       class="inline-flex items-center justify-center gap-x-3 px-8 h-14 rounded-3xl font-semibold text-lg border border-zinc-700 hover:bg-zinc-900 transition-colors">
+                        <span>Tại sao chọn chúng tôi</span>
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-x-8 mt-10 text-sm">
+                    <div class="flex -space-x-2">
+                        <div class="w-8 h-8 bg-zinc-700 rounded-full border-2 border-zinc-950 overflow-hidden"><img src="https://i.pravatar.cc/32?img=12" alt=""></div>
+                        <div class="w-8 h-8 bg-zinc-700 rounded-full border-2 border-zinc-950 overflow-hidden"><img src="https://i.pravatar.cc/32?img=47" alt=""></div>
+                        <div class="w-8 h-8 bg-zinc-700 rounded-full border-2 border-zinc-950 overflow-hidden"><img src="https://i.pravatar.cc/32?img=28" alt=""></div>
+                    </div>
+                    <div class="text-zinc-400">
+                        <span class="font-semibold text-white">4.98/5</span> từ 2.341 đánh giá
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero visual -->
+            <div class="relative">
+                <div class="aspect-[4/3] bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 relative">
+                    <img src="https://picsum.photos/id/1015/1200/900" alt="Sony WH-1000XM5 - Tai nghe cao cấp chính hãng" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/20 to-transparent"></div>
+                    
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <div class="text-sm text-white/70">BEST SELLER</div>
+                                <div class="font-semibold text-2xl">WH-1000XM5</div>
+                            </div>
+                            <a href="https://s.shopee.vn/8KmyvAJ9X4" target="_blank"
+                               class="sony-btn px-6 py-3 rounded-2xl text-sm font-semibold flex items-center gap-x-2">
+                                <span>Mua ngay</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATS / TRUST -->
+    <div class="border-y border-zinc-800 bg-zinc-900/50">
+        <div class="max-w-7xl mx-auto px-6 py-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-semibold tracking-tighter stat-number">98k+</div>
+                    <div class="text-sm text-zinc-400 mt-1">Sản phẩm đã bán</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-semibold tracking-tighter stat-number">4.9</div>
+                    <div class="text-sm text-zinc-400 mt-1">Đánh giá trung bình</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-semibold tracking-tighter stat-number">47</div>
+                    <div class="text-sm text-zinc-400 mt-1">Tỉnh thành giao hàng</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-semibold tracking-tighter stat-number">100%</div>
+                    <div class="text-sm text-zinc-400 mt-1">Hàng chính hãng</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS SECTION -->
+    <div id="products" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="flex items-end justify-between mb-10">
+            <div>
+                <div class="uppercase tracking-[3px] text-xs font-semibold text-red-500 mb-2">HOT IN 2026</div>
+                <h2 class="section-title text-4xl font-semibold tracking-tighter">Sản phẩm Sony đang hot</h2>
+            </div>
+            <a href="https://shopee.vn/search?keyword=sony%20chinh%20hang" target="_blank" 
+               class="hidden md:flex items-center gap-x-2 text-sm font-medium text-zinc-400 hover:text-white">
+                Xem tất cả trên Shopee <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+            </a>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            
+            <!-- Product 1: WH-1000XM5 -->
+            <div class="product-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden group">
+                <div class="relative aspect-square bg-zinc-950">
+                    <img src="https://picsum.photos/id/1015/600/600" alt="Sony WH-1000XM5 Wireless Noise Cancelling Headphones - Chính hãng"
+                         class="product-img w-full h-full object-cover">
+                    <div class="absolute top-4 right-4">
+                        <span class="affiliate-badge">AFFILIATE</span>
+                    </div>
+                    <div class="absolute top-4 left-4 bg-black/70 text-white text-xs px-3 py-1 rounded-2xl flex items-center gap-x-1">
+                        <i class="fa-solid fa-check text-emerald-400"></i>
+                        <span class="font-medium">Chính hãng</span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h3 class="font-semibold text-xl tracking-tight">WH-1000XM5</h3>
+                            <p class="text-zinc-400 text-sm">Tai nghe chống ồn cao cấp</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-emerald-400 font-semibold">₫7.990.000</div>
+                            <div class="text-xs text-zinc-500 line-through">₫9.990.000</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-x-2 text-xs mb-4">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="text-zinc-400">(2.841 đánh giá)</span>
+                    </div>
+                    
+                    <a href="https://s.shopee.vn/8KmyvAJ9X4" target="_blank" rel="noopener noreferrer"
+                       class="sony-btn w-full flex items-center justify-center gap-x-2 h-12 rounded-2xl font-semibold text-sm group-hover:scale-[1.02] transition-transform">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span>MUA NGAY TRÊN SHOPEE</span>
+                    </a>
+                    <p class="text-center text-[10px] text-zinc-500 mt-2">Affiliate • Giao nhanh • Bảo hành 12 tháng</p>
+                </div>
+            </div>
+
+            <!-- Product 2: A7 IV -->
+            <div class="product-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden group">
+                <div class="relative aspect-square bg-zinc-950">
+                    <img src="https://picsum.photos/id/160/600/600" alt="Sony Alpha A7 IV Full-frame Mirrorless Camera - Chính hãng"
+                         class="product-img w-full h-full object-cover">
+                    <div class="absolute top-4 right-4">
+                        <span class="affiliate-badge">BEST SELLER</span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h3 class="font-semibold text-xl tracking-tight">Alpha 7 IV</h3>
+                            <p class="text-zinc-400 text-sm">Máy ảnh full-frame mirrorless</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-emerald-400 font-semibold">₫42.990.000</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-x-2 text-xs mb-4">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-zinc-400">(1.204 đánh giá)</span>
+                    </div>
+                    
+                    <a href="https://s.shopee.vn/example-a7iv-link" target="_blank" rel="noopener noreferrer"
+                       class="sony-btn w-full flex items-center justify-center gap-x-2 h-12 rounded-2xl font-semibold text-sm group-hover:scale-[1.02] transition-transform">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span>MUA NGAY TRÊN SHOPEE</span>
+                    </a>
+                    <p class="text-center text-[10px] text-zinc-500 mt-2">Affiliate • Hàng chính hãng • Giao 2-3 ngày</p>
+                </div>
+            </div>
+
+            <!-- Product 3: Bravia TV -->
+            <div class="product-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden group">
+                <div class="relative aspect-square bg-zinc-950">
+                    <img src="https://picsum.photos/id/201/600/600" alt="Sony Bravia 65 inch 4K OLED TV - Chính hãng"
+                         class="product-img w-full h-full object-cover">
+                </div>
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h3 class="font-semibold text-xl tracking-tight">Bravia XR-65A95L</h3>
+                            <p class="text-zinc-400 text-sm">Smart TV OLED 65 inch</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-emerald-400 font-semibold">₫38.990.000</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-x-2 text-xs mb-4">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="text-zinc-400">(876 đánh giá)</span>
+                    </div>
+                    
+                    <a href="https://s.shopee.vn/example-bravia-link" target="_blank" rel="noopener noreferrer"
+                       class="sony-btn w-full flex items-center justify-center gap-x-2 h-12 rounded-2xl font-semibold text-sm group-hover:scale-[1.02] transition-transform">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span>MUA NGAY TRÊN SHOPEE</span>
+                    </a>
+                    <p class="text-center text-[10px] text-zinc-500 mt-2">Affiliate • Giao lắp đặt tận nơi</p>
+                </div>
+            </div>
+
+            <!-- Product 4: PlayStation 5 -->
+            <div class="product-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden group">
+                <div class="relative aspect-square bg-zinc-950">
+                    <img src="https://picsum.photos/id/251/600/600" alt="Sony PlayStation 5 Console - Chính hãng"
+                         class="product-img w-full h-full object-cover">
+                    <div class="absolute top-4 right-4">
+                        <span class="affiliate-badge">HOT</span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h3 class="font-semibold text-xl tracking-tight">PlayStation 5</h3>
+                            <p class="text-zinc-400 text-sm">Máy chơi game thế hệ mới</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-emerald-400 font-semibold">₫13.990.000</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-x-2 text-xs mb-4">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-zinc-400">(3.512 đánh giá)</span>
+                    </div>
+                    
+                    <a href="https://s.shopee.vn/example-ps5-link" target="_blank" rel="noopener noreferrer"
+                       class="sony-btn w-full flex items-center justify-center gap-x-2 h-12 rounded-2xl font-semibold text-sm group-hover:scale-[1.02] transition-transform">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span>MUA NGAY TRÊN SHOPEE</span>
+                    </a>
+                    <p class="text-center text-[10px] text-zinc-500 mt-2">Affiliate • Kèm tay cầm DualSense</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-10">
+            <a href="https://shopee.vn/search?keyword=sony" target="_blank"
+               class="inline-flex items-center gap-x-2 text-sm font-medium px-6 py-3 border border-zinc-700 hover:bg-zinc-900 rounded-2xl transition-colors">
+                <span>Xem thêm 120+ sản phẩm Sony trên Shopee</span>
+                <i class="fa-solid fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- WHY SONY SECTION -->
+    <div id="why" class="bg-zinc-900 py-16 border-y border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-4xl font-semibold tracking-tighter mb-3">Tại sao chọn SonyVN Hub?</h2>
+                <p class="text-zinc-400 max-w-md mx-auto">Chúng tôi chỉ bán hàng chính hãng, giá cạnh tranh nhất thị trường qua affiliate uy tín.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-3xl">
+                    <i class="fa-solid fa-shield-halved text-4xl text-emerald-400 mb-6"></i>
+                    <h3 class="font-semibold text-2xl mb-3">100% Chính hãng</h3>
+                    <p class="text-zinc-400">Hàng nhập khẩu chính ngạch, có tem bảo hành Sony Việt Nam. Không hàng xách tay, không hàng cũ.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-3xl">
+                    <i class="fa-solid fa-truck-fast text-4xl text-emerald-400 mb-6"></i>
+                    <h3 class="font-semibold text-2xl mb-3">Giao nhanh toàn quốc</h3>
+                    <p class="text-zinc-400">Giao 1-3 ngày tại TP.HCM &amp; Hà Nội. Các tỉnh khác 3-5 ngày. Đổi trả miễn phí 7 ngày.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-3xl">
+                    <i class="fa-solid fa-headset text-4xl text-emerald-400 mb-6"></i>
+                    <h3 class="font-semibold text-2xl mb-3">Hỗ trợ tận tâm</h3>
+                    <p class="text-zinc-400">Tư vấn 1-1 qua Zalo/Facebook. Hỗ trợ setup, bảo hành nhanh chóng. Luôn có mặt khi bạn cần.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEWS -->
+    <div id="reviews" class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="section-title text-4xl font-semibold tracking-tighter mb-10 text-center">Khách hàng nói gì về chúng tôi</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-3xl">
+                <div class="flex text-amber-400 mb-4">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="italic">"Mua WH-1000XM5 qua link của SONYVN Hub. Hàng mới 100%, giá rẻ hơn cửa hàng 1.5tr. Giao siêu nhanh, nhân viên hỗ trợ nhiệt tình."</p>
+                <div class="mt-6 flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-zinc-700 rounded-full overflow-hidden"><img src="https://i.pravatar.cc/40?img=32" alt=""></div>
+                    <div>
+                        <div class="font-medium">Anh Minh Tuấn</div>
+                        <div class="text-xs text-zinc-500">Content Creator • Hà Nội</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-3xl">
+                <div class="flex text-amber-400 mb-4">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="italic">"Mua Alpha 7 IV + lens cho công ty. Link affiliate rõ ràng, hàng chính hãng, có hóa đơn VAT đầy đủ. Rất chuyên nghiệp!"</p>
+                <div class="mt-6 flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-zinc-700 rounded-full overflow-hidden"><img src="https://i.pravatar.cc/40?img=47" alt=""></div>
+                    <div>
+                        <div class="font-medium">Chị Lan Hương</div>
+                        <div class="text-xs text-zinc-500">Giám đốc Marketing • TP.HCM</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-3xl">
+                <div class="flex text-amber-400 mb-4">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="italic">"PS5 mua cho con trai. Giá tốt, ship nhanh, đóng gói cẩn thận. Con mình rất thích. Sẽ ủng hộ thêm nhiều sản phẩm khác."</p>
+                <div class="mt-6 flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-zinc-700 rounded-full overflow-hidden"><img src="https://i.pravatar.cc/40?img=28" alt=""></div>
+                    <div>
+                        <div class="font-medium">Anh Quốc Việt</div>
+                        <div class="text-xs text-zinc-500">Bố bỉm • Đà Nẵng</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FINAL CTA -->
+    <div class="max-w-4xl mx-auto px-6 pb-20 text-center">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10 md:p-14">
+            <h2 class="text-4xl font-semibold tracking-tighter mb-4">Sẵn sàng nâng cấp thiết bị Sony?</h2>
+            <p class="text-zinc-400 mb-8 max-w-md mx-auto">Chọn sản phẩm bạn yêu thích và mua ngay qua link affiliate Shopee uy tín của chúng tôi.</p>
+            
+            <a href="#products" 
+               class="sony-btn inline-flex items-center justify-center gap-x-3 px-10 h-14 rounded-3xl font-semibold text-lg mx-auto">
+                <span>Khám phá ngay các deal hot</span>
+            </a>
+            
+            <p class="text-xs text-zinc-500 mt-6">Mọi giao dịch đều qua Shopee Mall • Hoàn tiền nếu không hài lòng</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-black border-t border-zinc-800 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between gap-y-8">
+                <div>
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-9 h-9 sony-gradient rounded-2xl flex items-center justify-center">
+                            <span class="text-white font-bold text-3xl tracking-tighter">S</span>
+                        </div>
+                        <div class="font-display font-semibold text-2xl">SONYVN Hub</div>
+                    </div>
+                    <p class="text-sm text-zinc-400 max-w-xs">Cổng affiliate Sony chính hãng tại Việt Nam.<br>Giúp bạn mua sắm thông minh &amp; tiết kiệm.</p>
+                    
+                    <div class="flex gap-x-4 mt-6 text-xl text-zinc-400">
+                        <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-8 text-sm">
+                    <div>
+                        <div class="font-semibold mb-4 text-white">Sản phẩm</div>
+                        <div class="space-y-2 text-zinc-400">
+                            <div><a href="#" class="hover:text-white">Tai nghe &amp; Audio</a></div>
+                            <div><a href="#" class="hover:text-white">Máy ảnh Alpha</a></div>
+                            <div><a href="#" class="hover:text-white">TV &amp; Bravia</a></div>
+                            <div><a href="#" class="hover:text-white">PlayStation</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-4 text-white">Hỗ trợ</div>
+                        <div class="space-y-2 text-zinc-400">
+                            <div><a href="#" class="hover:text-white">Hướng dẫn mua hàng</a></div>
+                            <div><a href="#" class="hover:text-white">Chính sách bảo hành</a></div>
+                            <div><a href="#" class="hover:text-white">Đổi trả &amp; Hoàn tiền</a></div>
+                            <div><a href="#" class="hover:text-white">Liên hệ Zalo</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-4 text-white">Liên hệ</div>
+                        <div class="space-y-2 text-zinc-400">
+                            <div>Zalo: 0901 234 567</div>
+                            <div>FB: fb.com/sonyvnhub</div>
+                            <div>Email: support@sonyvn-hub.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-zinc-800 text-center text-xs text-zinc-500">
+                © 2026 SONYVN Hub. Trang affiliate độc lập • Không phải trang chính thức của Sony. 
+                Tất cả link đều dẫn đến Shopee Mall (affiliate).
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#E60012');
+        }
+        
+        // Simple smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Optional: Track clicks on buy buttons (for analytics later)
+        document.querySelectorAll('.sony-btn, a[href*="shopee"]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                console.log('%c[Affiliate] Buy button clicked - ready for tracking', 'color:#666');
+                // Later: gtag('event', 'affiliate_click', { product: '...' });
+            });
+        });
+        
+        console.log('%c[SONYVN Hub] Fixed version loaded successfully. Images use placeholder picsum for demo. Replace with your real images.', 'color:#22c55e');
+        
+        initializeTailwind();
+    </script>
+</body>
+</html>
